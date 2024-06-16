@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        .top-bar {
+            background-color: orange;
+            color:darkblue;
+            padding: 10px 0;
+            font-weight: bold;
+        }
+        .top-bar .contact-info {
+            display: flex;
+            justify-content: space-between;
+        }
+        .navbar-custom {
+            background-color: darkblue;
+        }
+        .navbar-custom .navbar-brand,
+        .navbar-custom .nav-link,
+        .navbar-custom .btn {
+            color: white;
+        }
+        .header-content {
+            position: relative;
+            height: 500px;
+            background: url('/bootstraptasks/Image4.jpg') no-repeat center center;
+            background-size: cover;
+            color:white;
+            text-align: center;
+        }
+        .header-content .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .header-content .text {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .header-content .btn {
+            background-color: transparent;
+            border: 2px solid orange;
+            color: orange;
+        }
+        .features {
+            background-color:darkblue;
+            color: white;
+            padding: 20px 0;
+        }
+        .features .feature-box {
+            margin: 20px 0;
+            padding: 20px;
+            color: white;
+        }
+        .features .feature-box.expert,
+        .features .feature-box.support {
+            background-color:darkblue;
+        }
+        .features .feature-box.quality {
+            background-color: orange;
+            color: darkblue;
+        }
+        .brand-container {
+            background-color: orange;
+            color:darkblue;
+            font-weight: bold;
+            padding: 10px 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container">
+            <div class="row contact-info">
+                <div class="col-md-4">
+                    <i class="fas clock"></i> Opening Hour: Mon - Fri: 8:00 - 9:00
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fas phone"></i> Call Us: +012 345 6789
+                </div>
+                <div class="col-md-4 text-right">
+                    <i class="fas envelope"></i> Email Us: info@example.com
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="brand-container">
+        Builderz
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline ml-auto">
+                    <button class="btn btn-outline-light" type="button">Get A Quote</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="header-content">
+        <div class="overlay"></div>
+        <div class="text">
+            <h1>We Are Professional</h1>
+            <h2>For Your Dream Project</h2>
+            <button class="btn btn-primary">Get A Quote</button>
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 feature-box expert">
+                    <h3>Expert Worker</h3>
+                    <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non.</p>
+                </div>
+                <div class="col-md-4 feature-box quality">
+                    <h3>Quality Work</h3>
+                    <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non.</p>
+                </div>
+                <div class="col-md-4 feature-box support">
+                    <h3>24/7 Support</h3>
+                    <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

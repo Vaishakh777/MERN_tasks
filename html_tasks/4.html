@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        .container {
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 60px;
+            border: 1px solid black;
+            border-radius: 50px;
+            background-color: white;
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="number"],
+        input[type="address"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            width: 25%;
+            background-color: lightyellow;
+            border: 1px solid black;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>User Information Form</h2>
+    <form>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="repassword">Re-enter Password:</label>
+        <input type="password" id="repassword" name="repassword" required>
+
+        <label for="address">Address:</label>
+        <input type="address" id="address" name="address" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <input type="submit" value="Save">
+    </form>
+</div>
+
+</body>
+</html>
+

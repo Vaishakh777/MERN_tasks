@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .login-container {
+            width: 300px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin: 10px 0 5px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid silver;
+            border-radius: 5px;
+        }
+
+        input[type="checkbox"] {
+            margin-top: 10px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-login {
+            background-color: green;
+            color: white;
+        }
+
+        .btn-cancel {
+            background-color: red;
+            color: white;
+            width: auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: gray;
+            margin-left: auto;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .remember {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: silver;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <img src="/csstasks/Image1.jpeg" alt="Avatar">
+    <form>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter Username">
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter Password">
+        
+        <button type="submit" class="btn btn-login">Login</button>
+        
+        <div class="remember">
+            <input type="checkbox" id="remember" name="remember">
+            <label for="remember">Remember me</label>
+        </div>
+        
+        <div class="footer">
+            <button type="button" class="btn btn-cancel">Cancel</button>
+            <a href="#">Forgot password?</a>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

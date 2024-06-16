@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+        background-color: blue;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        }
+
+        .navbar-custom {
+        background-color: silver;
+        }
+
+        .navbar-custom .navbar-brand,
+        .navbar-custom .nav-link,
+        .navbar-custom .btn {
+        color: white;
+        }
+
+        .content {
+        display: flex;
+        height: calc(100vh - 120px); 
+        }
+
+        .main-content {
+        flex: 3;
+        background-color: white;
+        padding: 20px;
+        border-right: 1px solid lightgrey;
+        text-align: center;
+        }
+
+        .side-content {
+        flex: 1;
+        background-color: grey;
+        padding: 20px;
+        text-align: center;
+        }
+
+        .main-content h2,
+        .side-content h2 {
+        font-size: small;
+        margin-top: 0;
+        }   
+    </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Ethnus Layout</h1>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+            <a class="navbar-brand" href="#">Ethnus</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline ml-auto">
+                    <button class="btn btn-outline-light" type="submit">Sign Up</button>
+                    <button class="btn btn-outline-light" type="submit">Login</button>
+                </form>
+            </div>
+        </nav>
+        
+        <div class="container-fluid content">
+            <div class="main-content">
+                <h2>Write your content here</h2>
+            </div>
+            <div class="side-content">
+                <h2>This is</h2>
+            </div>
+        </div>
+    </body>
+</html>        
+        

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <style>
+.vertical-nav {
+    width: 200px;
+}
+
+.vertical-nav h2 {
+    text-align: center;
+}
+
+.vertical-container {
+    border: 1px solid black;
+    width: 200px;
+}
+
+.vertical-header {
+    background-color: orange;
+    padding: 15px;
+}
+
+.vertical-header a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.vertical-links {
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.vertical-links a {
+    text-decoration: none;
+    color: blue;
+    display: block;
+    margin: 10px 0;
+}
+
+.horizontal-title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.horizontal-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.horizontal-container {
+    display: flex;
+    border: 1px solid black;
+}
+
+.horizontal-item {
+    padding: 15px;
+}
+
+.horizontal-header {
+    background-color: gray;
+}
+
+.horizontal-header a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.horizontal-item a {
+    text-decoration: none;
+    color: blue;
+    font-size: 20px;
+}
+
+.horizontal-item:nth-child(n+2) {
+    background-color: lightgray;
+}
+</style>
+</head>
+<body>
+
+<div class="vertical-nav">
+    <h2>Vertical Navigation Bar</h2>
+    <div class="vertical-container">
+        <div class="vertical-header">
+            <a href="#">Home</a>
+        </div>
+        <div class="vertical-links">
+            <a href="#">Java</a>
+            <a href="#">CSS</a>
+            <a href="#">HTML</a>
+            <a href="#">Bootstrap</a>
+        </div>
+    </div>
+</div>
+
+<h2 class="horizontal-title">Horizontal Navigation Bar</h2>
+<div class="horizontal-nav">
+    <div class="horizontal-container">
+        <div class="horizontal-item horizontal-header">
+            <a href="#">Home</a>
+        </div>
+        <div class="horizontal-item">
+            <a href="#">Java</a>
+        </div>
+        <div class="horizontal-item">
+            <a href="#">HTML</a>
+        </div>
+        <div class="horizontal-item">
+            <a href="#">CSS</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
